@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-family:  sans-serif, Arial, Helvetica;
+    font-weight: 300;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(resources/img/laptop.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* --------------------------------------------------*/
+/* NAVIGATION */
+/* --------------------------------------------------*/
+
+.nav-row {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-main {
+    float: right;
+    list-style: none; /*** Removes bullets ***/
+    margin-top: 30px;
+}
+
+.nav-main li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.nav-main li a:link,
+.nav-main li a:visited {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    padding: 8px;
+}
+
+/* --------------------------------------------------*/
+/* HOME PROFILE */
+/* --------------------------------------------------*/
+.profile {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.profile-pic {
+    border-radius: 300px;
+    border: #fff;
+    object-fit: cover; /*** Prevents image distortion ***/
+    height: 120px;
+    width: 120px;
+    float: left;
+}
+
+.profile-text {
+    display:inline-block;
+    color: #ffffff;
+    font-size: 125%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 15px;
+}
+
+.btn:link,
+.btn:visited {
+    font-size: 100%;
+    border: 1px solid white;
+    border-radius: 200px;
+    padding: 8px;
+    color: white;
+    display:inline-block;
+    text-decoration: none;
+}
