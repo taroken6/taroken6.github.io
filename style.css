@@ -7,7 +7,6 @@
 html {
     font-size: 20px;
     font-family:  sans-serif, Arial, Helvetica;
-    font-weight: 300;
 }
 
 header {
@@ -15,6 +14,50 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
+}
+
+/********** HEADER **********/
+
+h1 {
+    font-family: 'Josefin Sans';
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+h1:after {
+    display: block;
+    content: " ";
+    height: 2px;
+    border-bottom: 1px solid black;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/********** ICONS **********/
+
+ion-icon[name="logo-linkedin"] {
+    transition: color 0.2s;
+}
+ion-icon[name="logo-github"] {
+    transition: color 0.2s;
+}
+ion-icon[name="logo-youtube"] {
+    transition: color 0.2s;
+}
+
+ion-icon[name="logo-linkedin"]:hover {
+    color: #007bb5;
+}
+ion-icon[name="logo-github"]:hover {
+    color: rgb(141, 141, 141);
+}
+ion-icon[name="logo-youtube"]:hover {
+    color: #ff0000;
 }
 
 /* --------------------------------------------------*/
@@ -46,16 +89,17 @@ header {
 }
 
 /* --------------------------------------------------*/
-/* HOME PROFILE */
+/* HOME */
 /* --------------------------------------------------*/
 .profile {
     color: #fff;
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 35%;
+    left: 15%;
     background-color: rgb(0, 0, 0, 0.5);
     border-radius: 30px;
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
 .profile-pic {
@@ -64,25 +108,114 @@ header {
     object-fit: cover; /*** Prevents image distortion ***/
     height: 120px;
     width: 120px;
-    float: left;
 }
 
-.profile-text {
-    display:inline-block;
+.profile-text-container {
+    margin: 0px 20px;
+}
+
+.profile-text-container p {
+    padding-bottom: 5px;
+}
+
+.profile-text-container p:first-child {
     color: #ffffff;
-    font-size: 125%;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 15px;
+    font-size: 145%;
 }
 
-.btn:link,
-.btn:visited {
-    font-size: 100%;
-    border: 1px solid white;
-    border-radius: 200px;
-    padding: 8px;
-    color: white;
-    display:inline-block;
-    text-decoration: none;
+.profile-links ul {
+    margin-top: 5px;
+    list-style: none;
 }
+
+.profile-links li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.profile-links li a:visited,
+.profile-links li a:link {
+    text-decoration: none;
+    color: white;
+}
+
+/* --------------------------------------------------*/
+/* ABOUT ME */
+/* --------------------------------------------------*/
+
+.section-about {
+    padding-bottom: 30px;
+}
+
+.section-about p {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* --------------------------------------------------*/
+/* MY WORKS */
+/* --------------------------------------------------*/
+
+.section-work {
+    background-color: #eeeeee;
+    height: auto;
+}
+
+.project-box {
+    float: left;
+    width: 46%;
+    margin: 0 2%;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.project-box div {
+    padding-bottom: 5px;
+}
+
+.project-title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 125%;
+}
+
+.project-title:after {
+    display: block;
+    content: " ";
+    height: 2px;
+    border-bottom: 1px solid black;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.project-image iframe{
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    height: 400px;
+}
+
+.project-summary,
+.project-links {
+    margin: 0 10px;
+}
+
+.project-links ul {
+    list-style: none;
+}
+
+.project-links ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.project-links ul li a:link,
+.project-links ul li a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* --------------------------------------------------*/
+/* CONTACT */
+/* --------------------------------------------------*/
+

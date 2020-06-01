@@ -1,25 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Audie's website</title>
+    <title>My Portfolio</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-row">
                 <ul class="nav-main">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Resume</a></li>                
-                    <li><a href="#">Contact</a></li>                
+                    <li><a href="#">About Me</a></li>                
+                    <li><a href="#">My Work</a></li>                
+                    <li><a href="#">Contact Me</a></li>                
                 </ul>
             </div>
         </nav>
         <div class="profile">
             <img src="resources/img/profile-pic.png" alt="picture" class="profile-pic">
-            <h1 class="profile-text">Audie Mendaros,<br>Software Developer</h1><br>
-            <a class="profile-text btn" href="#">See my work</a>
+            <div class="profile-text-container">
+                <p>Audie Mendaros</p>
+                <p>Software Developer</p>
+            </div>
+            <div class="profile-links">
+                <ul>
+                    <li><a href="https://linkedin.com/in/audie-mendaros/"><ion-icon name="logo-linkedin"></ion-icon></a></ion-icon></li>
+                    <li><a href="https://github.com/taroken6"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLLt--NmamkatcaAPu38e1mkHLcPszgCst"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                </ul>
+            </div>
         </div>
     </header>
+
+    <section class="section-about">
+        <h1>About Me</h1>
+        <p>Currently looking to start a career as a Software Developer. Experienced with Java, Python, Android SDK, and XML as shown through independent projects. Great at working and communicating with others.  </p>
+    </section>
+
+    <section class="section-work">
+        <h1>My Work</h1>
+        <div class="project-box">
+            <div class="project-title">
+                Big Two - Online Card Game
+            </div>
+            <div class="project-image">
+                <iframe src="https://www.youtube.com/embed/6kYC5o82Tfw"></iframe>
+            </div>
+            <div class="project-summary">
+                An online card game based off the real 'Big Two' card game. Players will play against each other by playing poker hands and the largest rank is 2. 
+                This project was coded with Python, utilizes the <a href="https://www.pygame.org/" target="_blank">PyGame</a> library for a friendly graphical user interface, 
+                and socket programming to allow clients to communicate with each other through a server.
+            </div>
+            <div class="project-links">
+                <ul>
+                    <li><a href="https://github.com/taroken6/Big-Two-Game"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li><a href="https://youtu.be/6kYC5o82Tfw"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="project-box">
+            <div class="project-title">
+                Budget Calculator - Android App
+            </div>
+            <div class="project-image">
+                <iframe src="https://www.youtube.com/embed/34hjhiP_aN0"></iframe>
+            </div>
+            <div class="project-summary">
+                A budget calculator for the Android. This app allows users to calculate their earnings, budget, and spendings based on the data they input. Addtionally, 
+                the app makes use of serialzation so that users can access the data they have previously inputted. This project was coded with Java along with XML in the 
+                <a src="https://developer.android.com/studio" target="_blank">Android Studio</a> IDE.
+            </div>
+            <div class="project-links">
+                <ul>
+                    <li><a href="https://github.com/taroken6/Big-Two-Game"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li><a href="https://youtu.be/34hjhiP_aN0"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contact">
+        <h1>Contact Me</h1>
+        <form>
+            <div class="contact-row">
+                <div class="contact-text">
+                    <label>Name</label>
+                </div>
+                <div class="contact-input">
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                </div>
+            </div>
+            <div class="contact-row">
+                <div class="contact-text">
+                    <label>Email</label>
+                </div>
+                <div class="contact-input">
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                </div>
+            </div>
+            <div class="contact-row">
+                <div class="contact-text">
+                    <label>Message</label>
+                </div>
+                <div class="contact-input">
+                    <textarea name="message" placeholder="Your message" required></textarea>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
