@@ -158,18 +158,24 @@ ion-icon[name="logo-youtube"]:hover {
 
 .section-work {
     background-color: #eeeeee;
-    height: auto;
+    overflow: auto;
+    padding-bottom: 30px;
 }
 
-.project-box {
-    float: left;
-    width: 46%;
-    margin: 0 2%;
-    border: 1px solid rgb(180, 180, 180);
+.project-table {
+    display: table;
+    border-spacing: 100px 0;
 }
 
-.project-box div {
+.project-cell {
+    display: table-cell;
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 10px;
+}
+
+.project-cell div {
     padding-bottom: 5px;
+    position: relative;
 }
 
 .project-title {
@@ -191,13 +197,14 @@ ion-icon[name="logo-youtube"]:hover {
 .project-image iframe{
     display: block;
     margin: 10px auto;
-    width: 80%;
+    width: 90%;
     height: 400px;
 }
 
 .project-summary,
 .project-links {
-    margin: 0 10px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .project-links ul {
@@ -219,3 +226,44 @@ ion-icon[name="logo-youtube"]:hover {
 /* CONTACT */
 /* --------------------------------------------------*/
 
+.contact-row {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.contact-row div {
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.contact-text {
+    width: 33%;
+}
+
+.contact-input {
+    width: 66%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid rgb(145, 145, 145);
+    margin-bottom: 10px;
+}
+
+*:focus {outline: none;}

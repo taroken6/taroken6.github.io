@@ -39,49 +39,51 @@
 
     <section class="section-work">
         <h1>My Work</h1>
-        <div class="project-box">
-            <div class="project-title">
-                Big Two - Online Card Game
+        <div class="project-table">
+            <div class="project-cell">
+                <div class="project-title">
+                    Big Two - Online Card Game
+                </div>
+                <div class="project-image">
+                    <iframe src="https://www.youtube.com/embed/6kYC5o82Tfw"></iframe>
+                </div>
+                <div class="project-summary">
+                    An online card game based off the real 'Big Two' card game. Players will play against each other by playing poker hands and the largest rank is 2. 
+                    This project was coded with Python, utilizes the <a href="https://www.pygame.org/" target="_blank">PyGame</a> library for a friendly graphical user interface, 
+                    and socket programming to allow clients to communicate with each other through a server.
+                </div>
+                <div class="project-links">
+                    <ul>
+                        <li><a href="https://github.com/taroken6/Big-Two-Game"><ion-icon name="logo-github"></ion-icon></a></li>
+                        <li><a href="https://youtu.be/6kYC5o82Tfw"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="project-image">
-                <iframe src="https://www.youtube.com/embed/6kYC5o82Tfw"></iframe>
-            </div>
-            <div class="project-summary">
-                An online card game based off the real 'Big Two' card game. Players will play against each other by playing poker hands and the largest rank is 2. 
-                This project was coded with Python, utilizes the <a href="https://www.pygame.org/" target="_blank">PyGame</a> library for a friendly graphical user interface, 
-                and socket programming to allow clients to communicate with each other through a server.
-            </div>
-            <div class="project-links">
-                <ul>
-                    <li><a href="https://github.com/taroken6/Big-Two-Game"><ion-icon name="logo-github"></ion-icon></a></li>
-                    <li><a href="https://youtu.be/6kYC5o82Tfw"><ion-icon name="logo-youtube"></ion-icon></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="project-box">
-            <div class="project-title">
-                Budget Calculator - Android App
-            </div>
-            <div class="project-image">
-                <iframe src="https://www.youtube.com/embed/34hjhiP_aN0"></iframe>
-            </div>
-            <div class="project-summary">
-                A budget calculator for the Android. This app allows users to calculate their earnings, budget, and spendings based on the data they input. Addtionally, 
-                the app makes use of serialzation so that users can access the data they have previously inputted. This project was coded with Java along with XML in the 
-                <a src="https://developer.android.com/studio" target="_blank">Android Studio</a> IDE.
-            </div>
-            <div class="project-links">
-                <ul>
-                    <li><a href="https://github.com/taroken6/Big-Two-Game"><ion-icon name="logo-github"></ion-icon></a></li>
-                    <li><a href="https://youtu.be/34hjhiP_aN0"><ion-icon name="logo-youtube"></ion-icon></a></li>
-                </ul>
+            <div class="project-cell">
+                <div class="project-title">
+                    Budget Calculator - Android App
+                </div>
+                <div class="project-image">
+                    <iframe src="https://www.youtube.com/embed/34hjhiP_aN0"></iframe>
+                </div>
+                <div class="project-summary">
+                    A budget calculator for the Android. This app allows users to calculate their earnings, budget, and spendings based on the data they input. Addtionally, 
+                    the app makes use of serialzation so that users can access the data they have previously inputted. This project was coded with Java along with XML in the 
+                    <a src="https://developer.android.com/studio" target="_blank">Android Studio</a> IDE.
+                </div>
+                <div class="project-links">
+                    <ul>
+                        <li><a href="https://github.com/taroken6/Big-Two-Game"><ion-icon name="logo-github"></ion-icon></a></li>
+                        <li><a href="https://youtu.be/34hjhiP_aN0"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="section-contact">
         <h1>Contact Me</h1>
-        <form>
+        <form action="MAILTO:audiemendaros@yahoo.com" method="post" enctype="text/plain">
             <div class="contact-row">
                 <div class="contact-text">
                     <label>Name</label>
@@ -104,6 +106,14 @@
                 </div>
                 <div class="contact-input">
                     <textarea name="message" placeholder="Your message" required></textarea>
+                </div>
+            </div>
+            <div class="contact-row">
+                <div class="contact-text">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="contact-input">
+                    <input type="submit" value="Send!">
                 </div>
             </div>
         </form>
