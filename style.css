@@ -60,6 +60,16 @@ ion-icon[name="logo-youtube"]:hover {
     color: #ff0000;
 }
 
+/********** LINKS **********/
+
+.section-about p a:visited,
+.section-about p a:link,
+.project-summary a:visited,
+.project-summary a:link {
+    text-decoration: none;
+    color: #0645AD;
+}
+
 /* --------------------------------------------------*/
 /* NAVIGATION */
 /* --------------------------------------------------*/
@@ -80,12 +90,22 @@ ion-icon[name="logo-youtube"]:hover {
     margin-left: 40px;
 }
 
+.nav-main li a {
+    transition: color 0.2s, border-color 0.2s;
+}
+
 .nav-main li a:link,
 .nav-main li a:visited {
     color: white;
     text-decoration: none;
     border-bottom: 2px solid white;
     padding: 8px;
+}
+
+.nav-main li a:hover,
+.nav-main li a:link {
+    color: rgb(199, 199, 199);
+    border-color: rgb(199, 199, 199);
 }
 
 /* --------------------------------------------------*/
@@ -149,7 +169,7 @@ ion-icon[name="logo-youtube"]:hover {
 
 .section-about p {
     margin: 0 auto;
-    width: 1200px;
+    width: 80%;
 }
 
 /* --------------------------------------------------*/
@@ -227,7 +247,7 @@ ion-icon[name="logo-youtube"]:hover {
 /* --------------------------------------------------*/
 
 .contact-row {
-    width: 1440px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -258,12 +278,32 @@ textarea {
     height: 100px;
 }
 
+
+
 input[type="submit"] {
     padding: 10px 20px;
     border-radius: 10px;
     background: #fff;
-    border: 1px solid rgb(145, 145, 145);
+    border: 1px solid #919191;
     margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active {
+    color: #fff;
+    background-color: #919191;
+}
+
+input[type="submit"],
+.disclaimer {
+    float: left;
+    margin-right: 5px;
+}
+
+.disclaimer {
+    font-size: 70%;
 }
 
 *:focus {outline: none;}
