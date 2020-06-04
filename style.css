@@ -102,8 +102,7 @@ ion-icon[name="logo-youtube"]:hover {
     text-decoration: none;
 }
 
-.nav-main li a:hover,
-.nav-main li a:link {
+.nav-main li a:hover {
     color: rgb(199, 199, 199);
     border-color: rgb(199, 199, 199);
 }
